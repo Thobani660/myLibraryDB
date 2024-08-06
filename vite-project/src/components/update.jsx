@@ -5,7 +5,9 @@ function UpdateBook({book}){
         console.log("update clicked")
 }
     return(
-        <button style={{border:"2px solid white",width:"100px",height:"30px"}} onClick={Onchange}>update</button>
+        // <button style={{border:"2px solid white",width:"100px",height:"30px"}} onClick={Onchange}>update</button>
+        <>
+        </>
 
     )
 }export default UpdateBook

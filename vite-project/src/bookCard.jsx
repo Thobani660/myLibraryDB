@@ -1,11 +1,11 @@
 function BookCard({book}){
-    console.log("incwadi",book.TITTLE)
+    console.log("incwadi",book.COVERDESIGN)
     return(
         <>
             <div className="Card"
                   >
-                <div className="cover" >
-
+            <div className="cover" style={{backgroundImage:`url(${require(book.COVERDESIGN)})`}} >
+                    {/* <img src={book.COVERDESIGN}/> */}
                 </div>
                 <div className="bookInfo">
                   <h2   style={{marginLeft:"-30px"}}>{book.TITTLE}</h2>

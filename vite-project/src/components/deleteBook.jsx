@@ -7,7 +7,9 @@ function DeleteBook({book}){
                 console.log("delete clicked")
         }
     return(
-        <button style={{border:"2px solid white",width:"100px",height:"30px"}} onClick={Onchange}>delete</button>
+        // <button style={{border:"2px solid white",width:"100px",height:"30px"}} onClick={Onchange}>delete</button>
+        <>
+        </>
     )
 
 }export default DeleteBook

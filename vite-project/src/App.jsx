@@ -18,7 +18,7 @@ function App() {
     PUBLSH:"Andiswa Mkhize",
     PRICE:"R421",
     FORMET:"A4",
-    COVERDESIGN:"https://th.bing.com/th/id/OIP.ggUdsh7LpfPtjyFzh-XqCgHaEK?w=317&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    COVERDESIGN:"https://cdn.dribbble.com/userupload/9498135/file/original-41f4f441c8ec52d782e7e5db7333a166.jpg?resize=1024x768",
     RELEASE_DATE:"05/08/2024"
   },
   {id:"AuthersTable",
@@ -29,7 +29,7 @@ function App() {
     PUBLSH:"Andiswa Mkhize",
     PRICE:"R521",
     FORMET:"A4",
-    COVERDESIGN:"https://th.bing.com/th/id/OIP.ggUdsh7LpfPtjyFzh-XqCgHaEK?w=317&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    COVERDESIGN:"https://cdn.dribbble.com/userupload/9498135/file/original-41f4f441c8ec52d782e7e5db7333a166.jpg?resize=1024x768",
     RELEASE_DATE:"05/08/2024"
   },
   {id:"booksTable",
@@ -40,7 +40,7 @@ function App() {
     PUBLSH:"Andiswa",
     PRICE:"R621",
     FORMET:"A4",
-    COVERDESIGN:"https://th.bing.com/th/id/OIP.ggUdsh7LpfPtjyFzh-XqCgHaEK?w=317&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    COVERDESIGN:"https://cdn.dribbble.com/userupload/9498135/file/original-41f4f441c8ec52d782e7e5db7333a166.jpg?resize=1024x768",
     RELEASE_DATE:"05/08/2024"
   }];
  

@@ -54,7 +54,7 @@ body{
   padding: 20px;
 }
 .cover{
-  background-image: url("./assets/cardIMG.jfif");
+  /* background-image: url("./assets/cardIMG.jfif"); */
   width: 190px;
   height: 250px;
   background-repeat: no-repeat;
