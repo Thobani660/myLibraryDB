@@ -7,6 +7,7 @@ import DisplayBook from './components/readBook'
 import UpdateBook from './components/update'
 import DeleteBook from './components/deleteBook'
 import BookCard from './bookCard'
+import Register from './components/register'
 function App() {
   const [count, setCount] = useState(0)
   
@@ -48,12 +49,14 @@ function App() {
 
   return (
     <>
-      <BookCard    book={bookTable[0]}/>
-      <AddBook     book={bookTable[0]}/>
-      <DisplayBook book={bookTable[0]}/>
-      <UpdateBook book={bookTable[0]}/>
-      <DeleteBook book={bookTable[0]}/>
-     
+        <div style={{display:"flex"}}>
+            <BookCard    book={bookTable[0]}/>
+            <AddBook     book={bookTable[0]}/>
+            <DisplayBook book={bookTable[0]}/>
+            <UpdateBook book={bookTable[0]}/>
+            <DeleteBook book={bookTable[0]}/>
+            <Register book={bookTable[0]}/>
+        </div>
     </>
   )
 }
