@@ -4,6 +4,14 @@
   padding: 2rem;
   text-align: center;
 }
+*{
+  margin: 0;
+  
+}
+html,body,#root{
+  height: 100%;
+  width: 100%;
+}
 
 .logo {
   height: 6em;
@@ -50,8 +58,12 @@ body{
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 2%;
-  rotate: 1 1 0 30deg;
+  rotate: 4 3 0 5deg;
   padding: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
 }
 .cover{
   /* background-image: url("./assets/cardIMG.jfif"); */
@@ -59,7 +71,7 @@ body{
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 2%;
@@ -67,15 +79,28 @@ body{
 
 .form{
   width: 500px;
-  height: 400px;
-  background-color: black;
+  height: 600px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5%;
+  justify-content: space-around;
+  margin-left: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  rotate: 1 1 0 5deg;
+
+}
+.MainDiv{
+  width: 500px;
+  height: 600px;
+  /* background-image: url("./assets/res/frPo7cVfrWar9ebe9rLzg-415-80.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
   border-radius: 5%;
   justify-content: space-around;
   /* z-index:1; */
-  margin-left: 100px;
+  
+  margin-left: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  rotate: 1 1 0 30deg;
-
+  rotate: 1 1 0 5deg;
 }
 input{
   height: 5%;

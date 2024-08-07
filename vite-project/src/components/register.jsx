@@ -1,40 +1,62 @@
-import AddBook from "./createBook"
-function Register({book}){
 
-    // ISBN:1343-212-233-554,
-    // TITTLE: "JackOfAllTrades1",
-    // NU_PG: 82,
-    // EDITION:"limited-Edition1",
-    // PUBLSH:"Andiswa Mkhize",
-    // PRICE:"R421",
-    // FORMET:"A4",
-    // COVERDESIGN:"https://cdn.dribbble.com/userupload/9498135/file/original-41f4f441c8ec52d782e7e5db7333a166.jpg?resize=1024x768",
-    // RELEASE_DATE:"05/08/2024"
-    console.log("this it is",book.TITTLE)
-    function Thumela(){
-        alert("Inkinga iku Brawuza,usalungiswa");
-        console.log("Inkinga iku Brawuza,usalungiswa")
-    }
-    return (
-        <>
-        <AddBook/>
-            <form action="" className="form">
-                    <input style={{width:"350px"}} type="text" name="" id="" placeholder={book.PUBLSH} />
-                    <div style={{display:"flex"}}>
-                        
-                        <input style={{marginLeft:"60px",width:"220px"}} type="text" name="" id="" placeholder={book.TITTLE}/>
-                        <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="" id=" "placeholder={book.RELEASE_DATE}/>
-                    </div>
-                    <div>
-                        <input style={{width:"350px"}} type="text" name="" id="" placeholder={book.EDITION} />
 
-                    </div>
-                    <div>
-                            <input style={{marginLeft:"20px",width:"220px"}} type="text" name="" id="" placeholder="Nuumber of pages" />
-                            <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="" id="" placeholder={book.NU_PG} />
-                    </div>
-                     <button style={{height:"30px",width:"70px",borderRadius:"10px",backgroundColor:"lightgreen"}} onClick={Thumela}>submit</button>
-            </form>
-        </>
-    )
-}export default Register
+import React, { useState } from 'react';
+import {addBook} from "./createBook"
+// import addBook from "./addBook"
+
+function Register() {
+  const [formData, setFormData] = useState({
+    author: '',
+    title: '',
+    edition: '',
+    numPages: '',
+    coverDesign: '',
+    releaseDate: '',
+  });
+
+  function handleChange(event) {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  function handleSubmit(event){
+    event.preventDefault();
+    addBook(formData);
+    alert("Inkinga iku Brawuza,usalungiswa");
+  };
+
+  return (
+    <>
+     
+      <form action="" className="form" onSubmit={handleSubmit}>
+        <div className="MainDiv">
+            <input style={{width:"350px"}} type="text" name="author" id="" placeholder="AuthersName"   onChange={handleChange} />
+            <div style={{display:"flex"}}>
+                <input style={{marginLeft:"60px",width:"220px"}} type="text" name="title" id="" placeholder="Tittle"  onChange={handleChange} />
+                <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="releaseDate" id=" " placeholder="ReleaseDate" onChange={handleChange} />
+            </div>
+            <div>
+                <input style={{width:"350px"}} type="text" name="edition" id=""  placeholder="r" onChange={handleChange} />
+            </div>
+            <div>
+                <input style={{marginLeft:"20px",width:"220px"}} type="text" name="numPages" id="" placeholder="ISBN"  onChange={handleChange} />
+                <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="pages" id="" placeholder="Pages"  onChange={handleChange} />
+            </div>
+            <div>
+                <input style={{width:"350px"}} type="text" name="coverDesign" id="" placeholder="CoverDesign" value="CoverDesign" onChange={handleChange} />
+            </div>
+            <div>
+                <input style={{marginLeft:"20px",width:"220px"}} type="text" name="numPages" id="" placeholder="Nuumber of pages"  onChange={handleChange} />
+                <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="pages" id="" placeholder="Pages"  onChange={handleChange} />
+            </div>
+
+            <button style={{height:"30px",width:"70px",borderRadius:"10px",backgroundColor:"lightgreen"}} type="submit">submit</button>
+        </div>
+      </form>
+    </>
+  )
+}
+
+export default Register;

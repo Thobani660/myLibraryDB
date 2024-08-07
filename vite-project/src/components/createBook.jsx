@@ -1,4 +1,4 @@
-function AddBook({book}){
+export function addBook(book){
     // localStorage.setItem("book",JSON.stringify(book))
     // const storedBookTable = localStorage.getItem('bookTable');
     // const userData = JSON.parse(storedBookTable);
@@ -11,10 +11,4 @@ function AddBook({book}){
     console.log("newConsole",myBooks)
     localStorage.setItem("myBooks",JSON.stringify(myBooks))
 
-
-    return(
-        <>
-        {/* <h1>{book}</h1> */}
-        </>
-    )
-}export default AddBook
+}
