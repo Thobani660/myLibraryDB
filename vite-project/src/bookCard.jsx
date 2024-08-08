@@ -1,6 +1,6 @@
 import DeleteBook from "./components/deleteBook"
 function BookCard({books}){
-    console.log("incwadi",books)
+    // console.log("incwadi",books)
     return(
         <>
             <div className="Card">
@@ -14,7 +14,7 @@ function BookCard({books}){
                 <div className="price">
                     <h3 style={{marginLeft:"20px"}}>{books.price}</h3>
                 </div>
-                <DeleteBook/>
+                <DeleteBook ISBN={books.ISBN} />
             </div>
         </>
     )

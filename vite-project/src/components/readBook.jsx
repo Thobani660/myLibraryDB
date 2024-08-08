@@ -1,14 +1,16 @@
 // This is the R in CRUD  and it displays 
+import { useState } from "react";
 import BookCard from "../bookCard";
 
 function DisplayBook({book}) {
+    const [reload, setReload] = useState([])
 
   return (
     <>
        <div className="book-container">
             <div className="book-grid">
                 {book.map((Trial, index) => (
-                <BookCard key={index} books={Trial} />
+                <BookCard reload={reload} key={index} books={Trial} />
                 ))}
             </div>
          </div>
