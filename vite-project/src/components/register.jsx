@@ -49,10 +49,10 @@ function Register() {
             </div>
             <div>
                 <input style={{marginLeft:"20px",width:"220px"}} type="text" name="numPages" id="" placeholder="Nuumber of pages"  onChange={handleChange} />
-                <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="pages" id="" placeholder="Pages"  onChange={handleChange} />
+                <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="price" id="" placeholder="price"  onChange={handleChange} />
             </div>
 
-            <button style={{height:"30px",width:"70px",borderRadius:"10px",backgroundColor:"lightgreen"}} type="submit">submit</button>
+            <button style={{height:"40px",width:"90px",borderRadius:"10px",backgroundColor:"lightgreen"}} type="submit">submit</button>
         </div>
       </form>
     </>
