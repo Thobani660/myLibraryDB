@@ -12,13 +12,13 @@ function App() {
   
   let bookTable = [{id:"booksTable",
     ISBN:1343-212-233-554,
-    title: "JackOfAllTrades1",
+    title: "Stay Woke",
     numberOfPages: 82,
     edition:"limited-edition1",
     author:"Philasande Zondi",
     price:"R421",
     formet:"A4",
-    coverDesign:"https://th.bing.com/th?q=Jack+of+All+Trades+Facebook+Cover&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.1&pid=InlineBlock&mkt=en-ZA&cc=ZA&setlang=en&adlt=moderate&t=1&mw=247",
+    coverDesign:"https://images-cdn.9gag.com/photo/aZ3GNV0_700b.jpg",
     releaseDate:"05/08/2024"
   },
   {id:"AuthersTable",
