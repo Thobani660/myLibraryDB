@@ -4,14 +4,14 @@ function DeleteBook({book}){
     let myBooks = JSON.parse(localStorage.getItem("bookTable"));
     localStorage.setItem("myBooks",JSON.stringify(myBooks))
 
-        console.log("delete console", myBooks)
+        // console.log("delete console", myBooks)
         function handleDelete(){
-                console.log("delete clicked",myBooks)
+                // console.log("delete clicked",myBooks)
 
                 myBooks = myBooks.filter((handleChange) => handleChange !== book);
 
                 localStorage.setItem("bookTable", JSON.stringify(myBooks));
-                console.log("this is",myBooks)
+                // console.log("this is",myBooks)
 
                 
 

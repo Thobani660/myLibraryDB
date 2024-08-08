@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import {addBook} from "./createBook"
 // import addBook from "./addBook"
@@ -9,7 +8,7 @@ function Register() {
     author: '',
     title: '',
     edition: '',
-    numPages: '',
+    numberOfPages: '',
     coverDesign: '',
     releaseDate: '',
   });
@@ -34,18 +33,18 @@ function Register() {
         <div className="MainDiv">
             <input style={{width:"350px"}} type="text" name="author" id="" placeholder="AuthersName"   onChange={handleChange} />
             <div style={{display:"flex"}}>
-                <input style={{marginLeft:"60px",width:"220px"}} type="text" name="title" id="" placeholder="Tittle"  onChange={handleChange} />
+                <input style={{marginLeft:"60px",width:"220px"}} type="text" name="title" id="" placeholder="Title"  onChange={handleChange} />
                 <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="releaseDate" id=" " placeholder="ReleaseDate" onChange={handleChange} />
             </div>
             <div>
                 <input style={{width:"350px"}} type="text" name="edition" id=""  placeholder="r" onChange={handleChange} />
             </div>
             <div>
-                <input style={{marginLeft:"20px",width:"220px"}} type="text" name="numPages" id="" placeholder="ISBN"  onChange={handleChange} />
+                <input style={{marginLeft:"20px",width:"220px"}} type="text" name="numberOfPages" id="" placeholder="ISBN"  onChange={handleChange} />
                 <input style={{width:"70px" ,borderRadius:"20px",marginLeft:"50px"}} type="text" name="pages" id="" placeholder="Pages"  onChange={handleChange} />
             </div>
             <div>
-                <input style={{width:"350px"}} type="text" name="coverDesign" id="" placeholder="CoverDesign" value="CoverDesign" onChange={handleChange} />
+                <input style={{width:"350px"}} type="text" name="coverDesign" id="" placeholder="CoverDesign"  onChange={handleChange} />
             </div>
             <div>
                 <input style={{marginLeft:"20px",width:"220px"}} type="text" name="numPages" id="" placeholder="Nuumber of pages"  onChange={handleChange} />

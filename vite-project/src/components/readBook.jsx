@@ -3,17 +3,16 @@ import BookCard from "../bookCard";
 
 function DisplayBook({book}) {
 
-    
-    
-  
-  const storedBooks = localStorage.getItem("bookTable");
-  const maping =  JSON.parse(storedBooks)
- console.log(storedBooks,"myfoot")
   return (
     <>
-        {maping.map((book,index) => (
-        <BookCard key={index} book={book} />
-      ))}
+       <div className="book-container">
+            <div className="book-grid">
+                {book.map((Trial, index) => (
+                <BookCard key={index} books={Trial} />
+                ))}
+            </div>
+         </div>
+
     </>
   );
 }
