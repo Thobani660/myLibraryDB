@@ -24,6 +24,7 @@ function Register() {
     event.preventDefault();
     addBook(formData);
     alert("Inkinga iku Brawuza,usalungiswa");
+    window.location.reload(true)
   };
 
   return (

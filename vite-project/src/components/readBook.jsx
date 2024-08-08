@@ -3,14 +3,14 @@ import { useState } from "react";
 import BookCard from "../bookCard";
 
 function DisplayBook({book}) {
-    const [reload, setReload] = useState([])
+    const [reload, setReload] = useState(true);
 
   return (
     <>
        <div className="book-container">
             <div className="book-grid">
                 {book.map((Trial, index) => (
-                <BookCard reload={reload} key={index} books={Trial} />
+                <BookCard reloading={setReload} key={index} books={Trial} />
                 ))}
             </div>
          </div>

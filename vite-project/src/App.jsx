@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import {addBook} from './components/createBook'
 import DisplayBook from './components/readBook'
-import UpdateBook from './components/update'
+// import UpdateBook from './components/update'
 import DeleteBook from './components/deleteBook'
 import BookCard from './bookCard'
 import Register from './components/register'
@@ -57,6 +57,7 @@ function App() {
           <div style={{display:"grid"}}>
              <DisplayBook book={maping}/>
           </div>
+          {/* <UpdateBook/> */}
          
        
             
