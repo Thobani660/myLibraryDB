@@ -1,7 +1,6 @@
 import { useState } from "react";
-
 // This is D in CRUD for deleting
-function DeleteBook({ISBN,reloading}){
+function DeleteBook({ISBN}){
 
     const [reload, setReload] = useState(!true)
 
@@ -26,33 +25,3 @@ function DeleteBook({ISBN,reloading}){
     )
 
 }export default DeleteBook
-
-// import React, { useState, useEffect } from 'react';
-// import DeleteBook from './DeleteBook';
-
-// function BookList() {
-//   const [books, setBooks] = useState([]);
-
-//   useEffect(() => {
-//     const storedBooks = JSON.parse(localStorage.getItem("bookTable"));
-//     setBooks(storedBooks);
-//   }, []);
-
-//   const handleDelete = (book) => {
-//     const updatedBooks = books.filter((item) => item !== book);
-//     setBooks(updatedBooks);
-//     localStorage.setItem("bookTable", JSON.stringify(updatedBooks));
-//   };
-
-//   return (
-//     <div>
-//       {books.map((book) => (
-//         <div key={book}>
-//           <DeleteBook book={book} handleDelete={handleDelete} />
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
-
-// export default BookList;

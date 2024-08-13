@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import DeleteBook from './components/deleteBook';
 import { addBook } from './components/createBook';
@@ -19,16 +18,12 @@ function BookCard({ books, reloading, setReload }) {
     setFormData({
       ...formData,
       [event.target.name]: event.target.value,
-    
-     
-
     });
   };
   function handleSubmit(event) {
     event.preventDefault();
     addBook(formData);
     setEditMode(false);
-    // setReload(!reloading);
     // alert("Book updated successfully!");
     window.location.reload(true)
 
@@ -62,7 +57,6 @@ function BookCard({ books, reloading, setReload }) {
                 </div>
                 <div style={{display:"flex"}}>
                 <button onClick={() => setEditMode(true)} style={{width:"100px",height:"30px", backgroundColor:"lightblue",borderRadius:"9px",border:"2px solid white",padding:"5px",marginTop:"10px"}}><span className="nimbus--edit"></span>Edit</button>
-
                 <DeleteBook onClick={() => handleDelete(books.ISBN)} ISBN={books.ISBN}/>
                 </div>
             </div>
