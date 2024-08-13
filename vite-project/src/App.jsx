@@ -52,7 +52,7 @@ function App() {
     <>
         <div style={{display:"flex"}}>
           <div>
-              <Register />
+              {/* <Register /> */}
           </div>
           <div style={{display:"grid"}}>
              <DisplayBook book={maping}/>

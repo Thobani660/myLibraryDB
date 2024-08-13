@@ -20,7 +20,7 @@ function DeleteBook({ISBN,reloading}){
         }
     return(
         <>
-        <button style={{border:"2px solid white",width:"100px",height:"30px",backgroundColor:"red",marginLeft:"50px",borderRadius:"10px"}} onClick={handleDelete}>delete</button>
+        <button style={{border:"2px solid white",width:"100px",height:"30px",backgroundColor:"red",marginLeft:"50px",borderRadius:"10px",marginTop:"10px",marginLeft:"5px"}} onClick={handleDelete}><span className="material-symbols-light--delete-outline"></span>delete</button>
         
         </>
     )
