@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DeleteBook from './components/deleteBook';
 import { addBook } from './components/createBook';
 
-function BookCard({ books, reloading, setReload }) {
+function BookCard({ books, setReload }) {
 
   const [editMode, setEditMode] = useState(false);
   const [formData, setFormData] = useState({
@@ -24,8 +24,16 @@ function BookCard({ books, reloading, setReload }) {
     event.preventDefault();
     addBook(formData);
     setEditMode(false);
-    // alert("Book updated successfully!");
-    window.location.reload(true)
+    alert("Book updated successfully!");
+    let myBooks = JSON.parse(localStorage.getItem("bookTable"));
+
+     myBooks = myBooks.filter((book) => book.ISBN !== books.ISBN);
+    console.log("delete console", myBooks)
+    setReload(true);
+
+    localStorage.setItem("bookTable", JSON.stringify(myBooks));
+    // window.location.reload(false)
+    // window.location.reload(true)
 
   };
 
@@ -57,7 +65,7 @@ function BookCard({ books, reloading, setReload }) {
                 </div>
                 <div style={{display:"flex"}}>
                 <button onClick={() => setEditMode(true)} style={{width:"100px",height:"30px", backgroundColor:"lightblue",borderRadius:"9px",border:"2px solid white",padding:"5px",marginTop:"10px"}}><span className="nimbus--edit"></span>Edit</button>
-                <DeleteBook onClick={() => handleDelete(books.ISBN)} ISBN={books.ISBN}/>
+                <DeleteBook onClick={() => handleDelete(books.ISBN)} ISBN={books.ISBN} setReload={setReload}/>
                 </div>
             </div>
         

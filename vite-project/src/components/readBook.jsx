@@ -10,7 +10,7 @@ function DisplayBook({book}) {
        <div className="book-container">
             <div className="book-grid">
                 {book.map((Trial, index) => (
-                <BookCard reloading={setReload} key={index} books={Trial} />
+                <BookCard setReload={setReload} key={index} books={Trial} />
                 ))}
             </div>
          </div>
