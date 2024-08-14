@@ -55,7 +55,7 @@ function App() {
               {/* <Register /> */}
           </div>
           <div style={{display:"grid"}}>
-             <DisplayBook book={maping}/>
+             <DisplayBook />
           </div>
           {/* <UpdateBook/> */}
          

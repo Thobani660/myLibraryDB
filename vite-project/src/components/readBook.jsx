@@ -2,15 +2,20 @@
 import { useState } from "react";
 import BookCard from "../bookCard";
 
-function DisplayBook({book}) {
+function DisplayBook() {
+
+
     const [reload, setReload] = useState(true);
+
+    let newData = JSON.parse(localStorage.getItem("bookTable"));
+    console.log(newData,"this is library")
 
   return (
     <>
        <div className="book-container">
             <div className="book-grid">
-                {book.map((Trial, index) => (
-                <BookCard setReload={setReload} key={index} books={Trial} />
+                {newData.map((Trial, index) => (
+                   <BookCard reload={reload} setReload={setReload} key={index} books={Trial} />
                 ))}
             </div>
          </div>
